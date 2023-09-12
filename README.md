@@ -4,3 +4,4 @@ Member Name:
 2. Khumaira Malik
 3. Rio Ferdinand Vindi Tanius
 4. Seraphine Amanda Honoris
+5. Timothy Gilbert
