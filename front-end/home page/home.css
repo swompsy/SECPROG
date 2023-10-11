@@ -1,0 +1,106 @@
+header {
+  overflow: hidden;
+  background-color: pink;
+}
+
+.veji {
+  width: 70px;
+  height: 50px;
+  overflow: hidden;
+  padding-left: 8px;
+  padding-top: 8px;
+  margin-top: -6px;
+}
+
+
+.otherlogo { 
+  width: 27px;
+  height: 27px;
+  
+  padding-top: 20px;
+  padding-left: 20px;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-right: 30px;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+lu {
+  display: inline;
+  float: right;
+  
+}
+
+a {
+  display: block;
+  padding-right: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  /* background-color: #dddddd; */
+}
+li a:hover {
+  background-color: #dbe9d8;
+}
+lu a:hover {
+  background-color: #dbe9d8;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav-content {
+  
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: red;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+}
+
+.headermenu {
+  text-align: center;
+  float: right;
+  display: flex
+}
+
+.headermenu a {
+  text-align: center;
+  float: none;
+}
