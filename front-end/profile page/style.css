@@ -1,0 +1,53 @@
+header {
+    width: auto;
+    height: 110px;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.veji{
+    width: 150px;
+    height: 80px;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -6px;
+}
+
+.search{
+    width: 70px;
+    height: auto;
+    margin-left: 500px;
+    margin-top: -50px;
+}
+
+.wishlist{
+    width: 70px;
+    height: auto;
+    margin-left: 560px;
+    margin-top: -35px;
+    margin-bottom: 0px;
+}
+.history{
+    width: 60px;
+    height: 65px;
+    margin-left: 620px;
+    margin-top: -35px;
+    margin-bottom: -20px;
+}
+.keranjang{
+    width: 75px;
+    height: auto;
+    margin-left: 670px;
+    margin-top: -50px;
+    margin-bottom: -5px;
+}
+
+.logo-only{
+    width: 75px;
+    height: auto;
+    margin-left: 720px;
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
