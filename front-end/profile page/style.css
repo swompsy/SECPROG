@@ -1,28 +1,115 @@
-header {
-    width: auto;
-    height: 110px;
-    overflow: hidden;
-    background-color: whitesmoke;
+body{
+    margin: 0;
+    padding: 0;
 }
 
-.veji{
-    width: 150px;
+header {
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* width: 150px;
     height: 80px;
     overflow: hidden;
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: -6px;
+    margin-top: -6px; */
 }
 
-.search{
-    width: 70px;
+.logo{
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+.logo img{
+    max-height: 50px;
+}
+
+/* .search-logo{
+    display: flex;
+    align-items: center;
+}
+
+.search-logo img{
+    max-height: 38px;
+    margin-top: 5px;
+    margin-right: 1px;
+    transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+}
+.search-logo img:hover{
+    background-color: #fffefe;
+    border-radius: 50%;
+    padding: 10px;
+} */
+
+.additional-logos{
+    display: flex;
+    align-items: center;
+}
+
+.additional-logos img{
+    max-height: 30px;
+    margin-right: 40px;
+    transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+}
+
+.additional-logos img:hover{
+    background-color: #fffefe;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.main{
+    flex-grow: 0;
+}
+
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    margin-bottom: 0;
+}
+.search-bar{
+    /* width: 70px;
     height: auto;
     margin-left: 500px;
-    margin-top: -50px;
+    margin-top: -50px; */
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.wishlist{
+.search-bar input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.search-bar .search-close{
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.search-close:hover{
+    color: #a2c273;
+}
+
+/* .wishlist{
     width: 70px;
     height: auto;
     margin-left: 560px;
@@ -50,4 +137,4 @@ header {
     margin-left: 720px;
     margin-top: -35px;
     margin-bottom: 30px;
-}
+} */
