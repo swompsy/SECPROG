@@ -5,7 +5,7 @@ body{
 
 header {
     width: 100%;
-    background-color: black;
+    background-color: whitesmoke;
     position: relative;
     padding: 20px 0;
     text-align: center;
@@ -138,3 +138,27 @@ header {
     margin-top: -35px;
     margin-bottom: 30px;
 } */
+
+.profile-container{
+    background-color: #a2c273;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.profile-bar{
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.isian{
+    background-color: azure;
+    height: 30px;
+    margin-left: 250px;
+    margin-right: 50px;
+    border-radius: 100px;
+}
+.nama{
+    content: normal;
+}
