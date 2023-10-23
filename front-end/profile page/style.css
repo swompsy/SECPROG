@@ -156,6 +156,8 @@ header {
     padding-bottom: 20px;
 }
 
+
+
 .profile-content{
     /* background kotaknya  */
     background-color: none;
@@ -170,7 +172,6 @@ header {
     padding-bottom: 5px;
     /* fontnya  */
     text-align:justify;
-    font-family: Lexend;
     font-size: 20px;
     font-style: normal;
     line-height: normal;
@@ -193,19 +194,89 @@ header {
  */
 }
 
-.address-container, .history-container, .help-container{
+.address-container{
     margin-top: 250px;
     border-radius: 50px 50px 0px 0px;
     background: #F1F1F1;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     width: 1415px;
-    height: 140px;
+    height: 120px;
     flex-shrink: 0;
 }
 
 .address-logo, .history-logo, .help-logo{
-    width: 25px;
-    margin-left: 10px;
+    width: 30px;
+    margin-left: 15px;
     margin-top: 15px;
     
+}
+
+.address-title, .history-title {
+    margin-left: 80px;
+    margin-top: -55px;
+
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.address-status{
+    /* style */
+    background-color: #E9E6AC;
+    border-radius: 12px;
+
+    /* layout */
+    width: 80px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-left: 180px;
+    margin-top: -40px;
+
+    text-align: center;
+}
+
+.address-info, .history-info, .help-info{
+    margin-left: 80px;
+    font-size: x-large;
+    
+}
+
+.history-container{
+    background: #F1F1F1;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+    width: 1415px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.help-container{
+    border-radius: 0px 0px 50px 50px;
+    background: #F1F1F1;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 1415px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.help-title{
+    margin-left: 80px;
+    margin-top: -50px;
+
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.arrow-vector{
+    margin-top: -50px;
+    position: relative;
+    left: 680px;
+    bottom: 5px;
 }
