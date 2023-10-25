@@ -190,9 +190,80 @@ header {
     margin-left: 1300px;
     margin-top: -200px;
 
+    cursor: pointer;
+
     /* display: flex;
  */
 }
+
+.logout-popup{
+    display: flexbox;
+    background-color: #BCD4B6;
+    border-radius: 94px;
+
+    width: 924px;
+    height: 544px;
+    flex-shrink: 0;
+
+    color: black;
+    font-weight: 500;
+    
+
+
+    .logout-no{
+        border-radius: 62px;
+        border: 3px solid #FFF;
+        background: #A2C27E;
+    
+        width: 377px;
+        height: 124px;
+        flex-shrink: 0;
+    
+        text-align: center;
+        /* margin-top: 100px; */
+    }
+    
+    .logout-yes{
+        color: #fffefe;
+        border-radius: 62px;
+        border: 3px solid #FFF;
+        background: #AE1313;
+    
+        width: 377px;
+        height: 124px;
+        flex-shrink: 0;
+    
+        text-align: center;
+        /* margin-top: 100px; */
+    }
+}
+
+/* .logout-no{
+    border-radius: 62px;
+    border: 3px solid #FFF;
+    background: #A2C27E;
+
+    width: 377px;
+    height: 124px;
+    flex-shrink: 0;
+
+    text-align: center;
+    margin-top: 100px;
+} */ 
+
+/* .logout-yes{
+    color: #fffefe;
+    border-radius: 62px;
+    border: 3px solid #FFF;
+    background: #AE1313;
+
+    width: 377px;
+    height: 124px;
+    flex-shrink: 0;
+
+    text-align: center;
+    /* margin-top: 100px;
+} */
 
 .address-container{
     margin-top: 250px;
