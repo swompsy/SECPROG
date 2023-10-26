@@ -197,20 +197,24 @@ header {
 }
 
 .logout-popup{
-    display: flexbox;
+    position: absolute;
     background-color: #BCD4B6;
     border-radius: 94px;
 
     width: 924px;
-    height: 544px;
+    height: 300px;
     flex-shrink: 0;
 
     color: black;
     font-weight: 500;
+    padding-top: 130px;
+
+    margin-left: -1000px;
+    margin-top: 50px;
     
 
 
-    .logout-no{
+    .logout-no-content{
         border-radius: 62px;
         border: 3px solid #FFF;
         background: #A2C27E;
@@ -219,12 +223,13 @@ header {
         height: 124px;
         flex-shrink: 0;
     
-        text-align: center;
-        /* margin-top: 100px; */
+        align-items: center;
+        margin-left: 50px;
+        text-decoration: none;
+        
     }
     
-    .logout-yes{
-        color: #fffefe;
+    .logout-yes-content{
         border-radius: 62px;
         border: 3px solid #FFF;
         background: #AE1313;
@@ -232,11 +237,16 @@ header {
         width: 377px;
         height: 124px;
         flex-shrink: 0;
-    
-        text-align: center;
-        /* margin-top: 100px; */
+        
+        /* position: absolute;
+        left: 115%; */
+        margin-top: -128px;
+        margin-left: 500px;
+
+        text-decoration: none;
     }
 }
+
 
 /* .logout-no{
     border-radius: 62px;
