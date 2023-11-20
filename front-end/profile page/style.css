@@ -1,13 +1,15 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Lexend', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
     width: 100%;
     background-color: whitesmoke;
     position: relative;
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
 }
 
@@ -145,9 +147,11 @@ header {
     flex-wrap: wrap; */
     background-color: #a2c273;
     border-radius: 30px;
+    margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
     height: 230px;
+    /* width: 1820px; */
 }
 
 .profile-picture{ 
@@ -178,73 +182,104 @@ header {
 }
 
 .logout-container{
+    margin-top: -150px;
+}
+.logout-container button{
     background-color: rgb(138, 23, 23);
-    width: 100px;
-    height: 30px;
-    border-radius: 30px;
-
+    height: 75px;
+    width: 180px;
+    border-radius: 50px;
     color: white;
-    font-size:x-large;
-    text-align: center;
-
-    margin-left: 1300px;
-    margin-top: -200px;
-
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    margin-left: 1200px;
+    margin-top: -700px;
     cursor: pointer;
-
-    /* display: flex;
- */
+    border: none;
+    outline: none;
 }
 
-.logout-popup{
+
+.pop_up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e6f3d1;
+    opacity: 0.8;
+    padding: 30px; /* Increase padding for more space inside the pop-up */
+    height: 250px;
+    width: 480px; /* Set a specific width */
+    max-width: 80%; /* Set a maximum width to ensure it's responsive */
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pop_up-close {
     position: absolute;
-    background-color: #BCD4B6;
-    border-radius: 94px;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
 
-    width: 924px;
-    height: 300px;
-    flex-shrink: 0;
-
-    color: black;
-    font-weight: 500;
-    padding-top: 130px;
-
-    margin-left: -1000px;
+.pop_up-content {
+    text-align: center;
     margin-top: 50px;
-    
+}
 
+.pop_up-info p {
+    font-size: 44px; /* Adjust font size for "Are You Sure?" */
+    color: #333;
+    margin-bottom: 20px;
+}
 
-    .logout-no-content{
-        border-radius: 62px;
-        border: 3px solid #FFF;
-        background: #A2C27E;
-    
-        width: 377px;
-        height: 124px;
-        flex-shrink: 0;
-    
-        align-items: center;
-        margin-left: 50px;
-        text-decoration: none;
-        
-    }
-    
-    .logout-yes-content{
-        border-radius: 62px;
-        border: 3px solid #FFF;
-        background: #AE1313;
-    
-        width: 377px;
-        height: 124px;
-        flex-shrink: 0;
-        
-        /* position: absolute;
-        left: 115%; */
-        margin-top: -128px;
-        margin-left: 500px;
+.pop_up-button button {
+    padding: 15px 30px; /* Increase button padding for a larger button */
+    margin: 0 10px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 18px; /* Adjust font size for buttons */
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        text-decoration: none;
-    }
+.pop_up-button button.pop_up-yes {
+    background-color: #a4ba80;
+    color: #fff;
+}
+
+.pop_up-button button.pop_up-no {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.pop_up-button button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Existing CSS styles for pop_up-close button */
+.pop_up-close {
+    font-size: 54px; /* You can adjust the font size as needed */
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+/* Add this style to remove the default outline on button click */
+.pop_up-close:focus {
+    outline: none;
 }
 
 
@@ -280,7 +315,7 @@ header {
     border-radius: 50px 50px 0px 0px;
     background: #F1F1F1;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    width: 1415px;
+    /* width: 1820px; */
     height: 120px;
     flex-shrink: 0;
 }
@@ -329,7 +364,7 @@ header {
     background: #F1F1F1;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
-    width: 1415px;
+    /* width: 1820px; */
     height: 120px;
     flex-shrink: 0;
 }
@@ -338,7 +373,7 @@ header {
     border-radius: 0px 0px 50px 50px;
     background: #F1F1F1;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    width: 1415px;
+    /* width: 1820px; */
     height: 120px;
     flex-shrink: 0;
 }

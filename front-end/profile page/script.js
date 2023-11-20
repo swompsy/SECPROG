@@ -1,11 +1,17 @@
-const searchIcon = document.querySelector(".search-icon");
-const searchContainer = document.querySelector(".search-bar-container");
-const searchCloseButton = document.querySelector(".search-close");
 
-searchIcon.addEventListener("click", () => {
-    searchContainer.style.display = "flex";
-});
+const searchBar = document.getElementById('searchBar');
+const searchLogo = document.getElementById('searchLogo');
+const searchCloseButton = document.getElementById('searchClose');
 
-searchCloseButton.addEventListener("click", () => {
-    searchContainer.style.display = "none";
-});
+// Add event listeners
+searchLogo.addEventListener('click', showSearchBar);
+searchCloseButton.addEventListener('click', hideSearchBar);
+
+// Functions
+function showSearchBar() {
+    searchBar.style.display = 'flex';
+}
+
+function hideSearchBar() {
+    searchBar.style.display = 'none';
+}
