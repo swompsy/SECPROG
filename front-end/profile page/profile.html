@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 
     <!-- LINK CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
 </head>
 <body>
@@ -16,14 +18,14 @@
         <div class="header-inner">
             <div class="logo">
                 <a href="../home page/home.html">
-                    <img src="assets/veji.png" class="veji">
+                    <img src="../assets/logo_veji.png" class="veji">
                 </a>
             </div>
 
             <div class="search-bar-container">
-                <div class="search-bar">
+                <div class="search-bar" id="searchBar">
                     <input type="text" placeholder="search">
-                    <button class="search-close">&times;</button>
+                    <button class="search-close" id="searchClose">&times;</button>
                 </div>
             </div>
 
@@ -32,11 +34,11 @@
             </div> -->
 
             <div class="additional-logos">
-                <img src="assets/search.png" alt="search-logo" class="logo">
-                <img src="assets/wishlist.png" alt="wishlist-logo" class="logo">
-                <img src="assets/history.png" alt="history-logo" class="logo">
-                <img src="assets/keranjang.png" alt="keranjang-logo" class="logo">
-                <img src="assets/logo.png" alt="logo-only" class="logo">
+                <img src="../assets/search.png" alt="search-logo" class="logo" id="searchLogo">
+                <img src="../assets/wishlist.png" alt="wishlist-logo" class="logo">
+                <img src="../assets/history.png" alt="history-logo" class="logo">
+                <img src="../assets/keranjang.png" alt="keranjang-logo" class="logo">
+                <img src="../assets/logo_SecProg.png" alt="logo-only" class="logo">
             </div>
 
             <!-- <div class="wishlist">
@@ -63,14 +65,12 @@
 
         </div>
     </header>
-    <script src="backend.js"></script>
 
 
     <div class="profile-container">
         <div class="profile-picture">
-            <img src="assets/profilepicture.png" alt="profilepicture" class="pict">
+            <img src="../assets/profilepicture.png" alt="profilepicture" class="pict">
         </div>
-
         <div class="profile-content">
             <p>Veji</p>
             <p>Veji@company.com</p>
@@ -78,14 +78,27 @@
         </div>
 
         <div class="logout-container">
-            <p>log out</p>
+            <button class="logout" id="logoutButton">Log Out</button>
+        </div>
+        
+        <div class="pop_up" id="popup">
+            <div class="pop_up-content">
+                <button class="pop_up-close" id="closePopup">&times;</button>
+                <div class="pop_up-info">
+                    <p>Are You Sure?</p>
+                </div>
+                <div class="pop_up-button">
+                    <button class="pop_up-no" id="cancelButton">No</button>
+                    <button class="pop_up-yes" id="confirmButton">Yes, Log Out</button>
+                </div>
+            </div>
         </div>
 
         <div class="settings-container">
 
             <div class="address-container">
                 <div class="address-logo">
-                    <img src="../profile page/assets/🦆 icon _pin destination_.svg" alt="address-logo" class="address-logo">
+                    <img src="../assets/icon _pin destination_.svg" alt="address-logo" class="address-logo">
                 </div>
                 <div class="address-title">
                     <p>Address</p>
@@ -100,13 +113,13 @@
                 </div>
 
                 <div class="arrow-vector">
-                    <img src="../profile page/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
+                    <img src="../assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
             </div>
 
             <div class="history-container">
                 <div class="history-logo">
-                    <img src="../profile page/assets/🦆 icon _files history_.svg" alt="history-logo" class="history-logo">
+                    <img src="../assets/icon _files history_.svg" alt="history-logo" class="history-logo">
                 </div>
 
                 <div class="history-title">
@@ -118,7 +131,7 @@
                 </div>
 
                 <div class="arrow-vector">
-                    <img src="../profile page/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
+                    <img src="../assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
 
             </div>
@@ -126,7 +139,7 @@
             <div class="help-container">
 
                 <div class="help-logo">
-                    <img src="../profile page/assets/🦆 icon _help circle_.svg" alt="help-logo" class="help-logo">
+                    <img src="../assets/icon _help circle_.svg" alt="help-logo" class="help-logo">
                 </div>
 
                 <div class="help-title">
@@ -138,7 +151,7 @@
                 </div>
 
                 <div class="arrow-vector">
-                    <img src="../profile page/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
+                    <img src="../assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
 
             </div>
@@ -151,6 +164,7 @@
     </div>
 
 
-
+<script src="../js/script.js"></script>
+<script src="../js/popout.js"></script>
 </body>
 </html>
