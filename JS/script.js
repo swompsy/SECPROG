@@ -51,3 +51,8 @@ outsideCheckbox.addEventListener("change", function () {
     updateCheckboxes();
 });
 
+document.getElementById('contact-us').addEventListener('click', function() {
+    // Redirect to about.html using JavaScript
+    window.location.href = '/HTML/about.html';
+});
+
