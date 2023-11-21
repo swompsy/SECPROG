@@ -40,8 +40,8 @@
             <div class="additional-logos">
                 <a href="#"><img src="/assets/search.png" alt="search-logo" class="logo" id="searchLogo"></a>
                 <a href="/HTML/wishlist.html"><img src="/assets/wishlist.png" alt="wishlist-logo" class="logo"></a>
-                <a href="/HTML/payment.html"><img src="/assets/history.png" alt="history-logo" class="logo"></a>
-                <a href="/HTML/cart.html"><img src="/assets/keranjang.png" alt="keranjang-logo" class="logo"></a>
+                <a href="/HTML/payment.php"><img src="/assets/history.png" alt="history-logo" class="logo"></a>
+                <a href="/HTML/cart.php"><img src="/assets/keranjang.png" alt="keranjang-logo" class="logo"></a>
                 <a href="/HTML/profile.php"><img src="/assets/v-logo.png" alt="logo-only" class="logo"></a>
             </div>
 

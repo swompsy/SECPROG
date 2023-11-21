@@ -28,7 +28,7 @@
                 <a href="#"><img src="/assets/search.png" alt="Logo 1"  class="search-icon" class="logo"></a>
                 <a href="/HTML/wishlist.html"><img src="/assets/wishlist.png" alt="Logo 2" class="logo"></a>
                 <a href="#"><img src="/assets/history.png" alt="Logo 3" class="logo"></a>
-                <a href="/HTML/cart.html"><img src="/assets/keranjang.png" alt="Logo 4" class="logo"></a>
+                <a href="/HTML/cart.php"><img src="/assets/keranjang.png" alt="Logo 4" class="logo"></a>
                 <a href="/HTML/profile.php"><img src="/assets/v-logo.png" alt="Logo 5" class="logo"></a>
             </div>
         </div>
