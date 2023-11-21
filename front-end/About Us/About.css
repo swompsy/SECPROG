@@ -89,6 +89,37 @@ body {
     color: #a2c273;
 }
 
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #a2c273; /* Choose the background color you prefer */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 10px; /* Adjust the margin to create space between items */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+}
+
+/* Change link color on hover */
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
 .square{
     width: 550px;
     height: 150px;
