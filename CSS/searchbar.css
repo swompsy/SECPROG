@@ -104,7 +104,7 @@ body {
     display: inline-flex;
     font-family: 'Lexend', sans-serif;
     align-items: flex-start; /* Center the icons vertically */
-    gap: 10px;
+    gap: 250px;
 }
 
 .social-icons a {
@@ -115,6 +115,21 @@ body {
 .social-icons img {
     max-height: 20px;
     margin-top: 15.5px;
+}
+
+.instagram {
+    display: flex;
+    gap : 5px;
+}
+
+.mail{
+    display: flex;
+    gap : 5px;
+}
+
+.phone{
+    display: flex;
+    gap : 5px;
 }
 
 /* Style the navigation bar */
