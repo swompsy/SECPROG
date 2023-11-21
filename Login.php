@@ -1,10 +1,15 @@
+<?php
+    session_start()
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="stylesheet" href="/front-end/Login Page & Register Page/CSS/Login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -21,7 +26,9 @@
         <div class="logo-veji">
             <img src="../source/veji-logo.png" alt="home-background">
         </div>
-        <form id="registration-form" onsubmit="return validateForm()">
+
+
+        <form id="login-form" onsubmit="return validateForm()" action="/Controllers/LoginController.php" method="post">
 
             <div class="form-group">
                 <label for="email">Email</label>
@@ -34,11 +41,11 @@
             </div>           
 
             <div class="form-group">
-                <button type="submit">Login</button>
+                <button type="submit" id="login">Login</button>
             </div>
              
             <div class="form-group" id="signup-link">
-                <p>Don't have an account ? <a href="register.html">Sign up</a></p>
+                <p>Don't have an account ? <a href="register.php">Sign up</a></p>
             </div>
 
         </form>

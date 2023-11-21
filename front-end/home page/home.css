@@ -1,106 +1,203 @@
-header {
-  overflow: hidden;
-  background-color: pink;
+.header {
+  background-color: #ede5e5; 
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%; 
+  opacity: 1;
 }
 
-.veji {
-  width: 70px;
-  height: 50px;
-  overflow: hidden;
-  padding-left: 8px;
-  padding-top: 8px;
-  margin-top: -6px;
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-
-.otherlogo { 
-  width: 27px;
-  height: 27px;
-  
-  padding-top: 20px;
-  padding-left: 20px;
-  overflow: hidden;
-  margin-top: -6px;
+.logo-container {
+  align-self: flex-start;
+  margin-right: 20px; 
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
+.logo-container img {
+  max-height: 50px;
+}
+
+.additional-logos {
+  display: flex;
+  align-items: center;
+}
+
+.additional-logos img {
+  max-height: 30px; 
+  margin-right: 40px; 
+  transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+}
+
+/* Add the hover effect */
+.additional-logos img:hover {
+  background-color: #fffefe; 
+  border-radius: 50%; 
+  padding: 10px; 
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  margin-left: center;
+  margin-bottom: 4px;
+}
+
+/* Style the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
   width: 100%;
-  padding-right: 30px;
 }
 
-li {
+.search-bar .search-close {
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+  right: 30px; 
+}
+
+.search-close:hover {
+  color: #a2c273;
+}
+
+.nav-bar{
+
+  background-color: #a2c273;
+  text-align: center;
+  color: #fff;
+}
+.nav-list li {
   display: inline;
-  float: left;
+  margin: 0 10px; /* Adjust the margin to create space between items */
 }
 
-lu {
-  display: inline;
-  float: right;
-  
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lexend', sans-serif;
+  padding: 15px;
+  margin: 0;
+
 }
 
-a {
-  display: block;
-  padding-right: 13px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 10px;
-  /* background-color: #dddddd; */
-}
-li a:hover {
-  background-color: #dbe9d8;
-}
-lu a:hover {
-  background-color: #dbe9d8;
-}
-
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-.subnav-content {
-  
-  position: absolute;
-  left: 0;
-  background-color: red;
-  width: 100%;
-  z-index: 1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  color: white;
+/* Style links */
+.nav-list a {
   text-decoration: none;
+  color: #fff; /* Link color */
 }
 
-.navbar {
-  background-color: red;
+/* Change link color on hover */
+.nav-list a:hover {
+  text-decoration: underline;
 }
 
-.logo {
-  text-align: center;
+
+.current-page {
+  width: 60px;
+  height: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #7BA659;
+}
+
+.wishlist-card {
+  width: 180px;
+  height: 260px;
+  display: inline-block; /* Display items in a row */
+  border: 2px solid #ddd;
+  margin: 50px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px; /* Add rounded corners for a card-like shape */
+  text-align: center; /* Center-align card content */
+}
+
+.wishlist-card img {
+  width: 180px; /* Ensure the image doesn't overflow the card */
+  height: 180px;
+  border-radius: 20px; /* Add rounded corners for the image */
+}
+
+.wishlist-name {
+  display: flex;
+  font-size: 8px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-family: Lexend, sans-serif;
+}
+
+.wishlist-price {
+  display: flex;
+  font-size: 8px;
+  font-weight: bold;
+  margin-top: -15px;
+  margin-left: 10px;
+  justify-content: left;
+  font-family: Lexend, sans-serif;
+}
+
+.wishlist-details {
   margin-top: 10px;
-  float: left;
 }
 
-.headermenu {
-  text-align: center;
-  float: right;
-  display: flex
+.star::before {
+  content: '\2605'; /* Star symbol (★) */
 }
 
-.headermenu a {
-  text-align: center;
-  float: none;
+.heart-icon{
+  display: flex;
+  margin-top: -57px;
+  margin-left: 150px;
+}
+
+.heart-icon img{
+  display: flex;
+  width: 30px;
+  height: 25px;
+}
+
+.rating {
+  color: #FFD700; /* Set the star color */
+  margin-left: -83px; /* Adjust the margin to move the stars to the left */
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the container takes up the full height of the card */
+}
+
+@media screen and (max-width: 800px) {
+  .home-page h1 {
+      font-size: 24px;
+  }
+
+  .home-page p {
+      font-size: 16px;
+  }
+
+  .home-page a {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
 }

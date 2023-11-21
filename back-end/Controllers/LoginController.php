@@ -6,13 +6,13 @@
 
     //get data from login form
 if($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $_POST['Email'];
+    $password = $_POST['Password'];
 
 //check if email exists in database
-$query = "SELECT * FROM users WHERE email = ? AND password = ?";
+$query = "SELECT * FROM user WHERE Email = ? AND Password = ?";
 $stmt = $db->prepare($query);
-$stmt->bind_param("ss", $email, $password);
+$stmt->bind_param("ss", $Email, $Password);
 
 $stmt->execute();
 $result = $stmt->get_result();
@@ -23,14 +23,14 @@ $db->close();
 if ($result->num_rows === 1) {
     $row = $result->fetch_assoc();
     
-    $_SESSION['id'] = $row['id'];
+    $_SESSION['userid'] = $row['userid'];
     $_SESSION['fullname'] = $row['fullname'];
     $_SESSION['email'] = $row['email'];
     $_SESSION['username'] = $row['username'];
     $_SESSION['password'] = $row['password'];
-    header("Location: ../HTML/Home.php");
+    header("Location: /front-end/home page/home.php");
 } else {
-    header("Location: ../HTML/Login.php");
+    header("Location: /front-end/Login Page & Register Page/HTML/Login.php");
 }
 
 }

@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 //check if email exists in database
 if(isset($_POST['email'])) {
-    $query = "SELECT * FROM users WHERE email = ?";
+    $query = "SELECT * FROM user WHERE email = ?";
     $stmt = $db->prepare($query);
     $stmt->bind_param("s", $email);
 
@@ -22,9 +22,9 @@ if(isset($_POST['email'])) {
 
     if ($result->num_rows === 1) {
         $_SESSION['message'] = "Email already exists";
-        header("Location: ../HTML/Register.php");
+        header("Location: /front-end/Login Page & Register Page/HTML/register.php");
     }else{
-        $query = "INSERT INTO users (full_name, email, username, password) VALUES (?, ?, ?, ?)";
+        $query = "INSERT INTO user (fullname, email, username, password) VALUES (?, ?, ?, ?)";
         $stmt = $db->prepare($query);
         $stmt->bind_param("ssss", $fullname, $email, $username, $password);
 
@@ -33,7 +33,7 @@ if(isset($_POST['email'])) {
         $db->close();
 
         $_SESSION['message'] = "Registration successful";
-        header("Location: ../HTML/Login.php");
+        header("Location: /front-end/Login Page & Register Page/HTML/Login.php");
         }
     }
 }

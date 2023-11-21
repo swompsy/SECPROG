@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +25,11 @@
         <div class="logo-veji">
             <img src="../source/veji-logo.png" alt="home-background">
         </div>
-        <form id="registration-form" onsubmit="return validateForm()">
+        
+        <form id="registration-form" onsubmit="return validateForm()" action="/Controllers/RegisterController.php" method="post">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
             </div>
 
             <div class="form-group">
@@ -33,7 +39,7 @@
 
             <div class="form-group">
                 <label for="email">Username</label>
-                <input type="email" id="email" name="email" placeholder="Username" required>
+                <input type="text" id="username" name="username" placeholder="Username" required>
             </div>
 
             <div class="form-group">
@@ -54,11 +60,11 @@
             </div>            
 
             <div class="form-group">
-                <button type="submit">Register Now</button>
+                <button type="submit" id="register">Register Now</button>
             </div>
 
             <div class="form-group" id="signup-link">
-                <p>Already have an account ? <a href="Login.html">Sign In</a></p>
+                <p>Already have an account ? <a href="Login.php">Sign In</a></p>
             </div>
 
         </form>
