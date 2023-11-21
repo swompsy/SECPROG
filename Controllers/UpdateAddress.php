@@ -1,7 +1,7 @@
 <?php
 session_start();
 require "./Connection.php";
-
+ 
 // get data from form
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserID = $_SESSION['userid'];
