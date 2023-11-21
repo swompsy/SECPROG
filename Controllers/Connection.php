@@ -1,5 +1,5 @@
 <?php
-    require "../Config/database.php";
+    require_once(__DIR__ . '/../Config/database.php');
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
 
@@ -16,6 +16,6 @@
     }
 
 // Set character set to utf8 (or your preferred character set)
-$db->set_charset("utf8");
+
     
 ?>

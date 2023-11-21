@@ -3,6 +3,7 @@
     if($_SESSION['login'] !== true){
         header("Location: login.php");
     }
+    require "../Controllers/Connection.php";
 ?>
 
 
@@ -43,10 +44,49 @@
 
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="./home.php">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
         </ul>
     </nav>
+    <?php 
+$query = "SELECT * FROM Product";
+$result = $db->query($query);
+
+?>
+<div class="card-container">
+<?php
+
+while ($row = $result->fetch_assoc()){
+?>
+    <div class="wishlist-card">
+        <img src="<?php echo $row['Image'];?>" alt="Product Image">
+        <div class="wishlist-details">
+            <div class="wishlist-name">
+                <h3><?php echo $row['Name'];?></h3>
+            </div>
+                <div class="wishlist-price">
+                    <h3><?php echo 'Rp.' . $row['Price'] . '.000';?></h3>
+                </div>
+            <div class="rating">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+            <div class="heart-icon">
+                <img src="assets/wishlist.png" alt="Product Image">
+            </div>
+        </div>
+    </div>
+<?php
+};
+$db->close();
+?>
+
+
+
+</div>
 </body>
 
 <script src="../JS/search.js"></script>
