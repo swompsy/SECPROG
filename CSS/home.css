@@ -104,3 +104,90 @@ lu a:hover {
   text-align: center;
   float: none;
 }
+
+
+.wishlist-card {
+  width: 180px;
+  height: 260px;
+  display: inline-block; /* Display items in a row */
+  border: 2px solid #ddd;
+  margin: 50px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px; /* Add rounded corners for a card-like shape */
+  text-align: center; /* Center-align card content */
+}
+
+.wishlist-card img {
+  width: 180px; /* Ensure the image doesn't overflow the card */
+  height: 180px;
+  border-radius: 20px; /* Add rounded corners for the image */
+}
+
+.wishlist-name {
+  display: flex;
+  font-size: 8px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-family: Lexend, sans-serif;
+}
+
+.wishlist-price {
+  display: flex;
+  font-size: 8px;
+  font-weight: bold;
+  margin-top: -15px;
+  margin-left: 10px;
+  justify-content: left;
+  font-family: Lexend, sans-serif;
+}
+
+.wishlist-details {
+  margin-top: 10px;
+}
+
+.star::before {
+  content: '\2605'; /* Star symbol (★) */
+}
+
+.heart-icon{
+  display: flex;
+  margin-top: -57px;
+  margin-left: 150px;
+}
+
+.heart-icon img{
+  display: flex;
+  width: 30px;
+  height: 25px;
+}
+
+.rating {
+  color: #FFD700; /* Set the star color */
+  margin-left: -83px; /* Adjust the margin to move the stars to the left */
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the container takes up the full height of the card */
+}
+
+@media screen and (max-width: 800px) {
+  .home-page h1 {
+      font-size: 24px;
+  }
+
+  .home-page p {
+      font-size: 16px;
+  }
+
+  .home-page a {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}

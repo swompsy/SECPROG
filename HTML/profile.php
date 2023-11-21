@@ -24,8 +24,8 @@
     <header>
         <div class="header-inner">
             <div class="logo">
-                <a href="/HTML/home.php">
-                    <img src="/assets/veji-logo.png" class="veji">
+                <a href="./home.php">
+                    <img src="../assets/logo_veji.png" class="veji">
                 </a>
             </div>
 
@@ -53,9 +53,9 @@
             <img src="/assets/profilepicture.png" alt="profilepicture" class="pict">
         </div>
         <div class="profile-content">
-            <p>Veji</p>
-            <p>Veji@company.com</p>
-            <p>+62955846136</p>
+            <p><?php echo $_SESSION['username']?></p>
+            <p><?php echo $_SESSION['email']?></p>
+            <p><?php echo '+62'.$_SESSION['numberphone']?></p>
         </div>
 
         <div class="logout-container">
@@ -90,7 +90,7 @@
                 </div>
 
                 <div class="address-info">
-                    <p>Jl. Kebangsaan no. 64, Jakarta, 18273</p>
+                    <p><?php echo $_SESSION['address']?></p>
                 </div>
 
                 <div class="arrow-vector">
