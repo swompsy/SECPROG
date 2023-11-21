@@ -3,7 +3,7 @@
     if($_SESSION['login'] !== true){
         header("Location: login.php");
     }
-    require "../Controllers/Connection.php";
+    require "/Controllers/Connection.php";
 ?>
 
 
@@ -22,7 +22,7 @@
 <header class="header">
         <div class="header-inner">
             <div class="logo-container">
-                <img src="../source/veji-logo.png" alt="Your Logo">
+                <img src="/assets/veji-logo.png" alt="Your Logo">
             </div>
             
             <div class="search-bar-container">
@@ -33,11 +33,11 @@
             </div>
 
             <div class="additional-logos">
-                <img src="../source/search.png" alt="Logo 1"  class="search-icon" class="logo">
-                <img src="../source/wishlist.png" alt="Logo 2" class="logo">
-                <img src="../source/icon-notebook.png" alt="Logo 3" class="logo">
-                <img src="../source/keranjang.png" alt="Logo 4" class="logo">
-                <img src="../source/v-logo.png" alt="Logo 5" class="logo" id="vLogo">
+                <a href="#"><img src="/assets/search.png" alt="Logo 1"  class="search-icon" class="logo"></a>
+                <a href="/HTML/wishlist.html"><img src="/assets/wishlist.png" alt="Logo 2" class="logo"></a>
+                <a href="/HTML/payment.html"><img src="/assets/history.png" alt="Logo 3" class="logo"></a>
+                <a href="/HTML/cart.html"><img src="/assets/keranjang.png" alt="Logo 4" class="logo"></a>
+                <a href="/HTML/profile.php"><img src="/assets/v-logo.png" alt="Logo 5" class="logo"></a>
             </div>
         </div>
     </header>
@@ -75,7 +75,7 @@ while ($row = $result->fetch_assoc()){
                 <span class="star"></span>
             </div>
             <div class="heart-icon">
-                <img src="assets/wishlist.png" alt="Product Image">
+                <img src="/assets/wishlist.png" alt="Product Image">
             </div>
         </div>
     </div>
