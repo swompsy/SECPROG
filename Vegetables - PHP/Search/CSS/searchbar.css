@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ede5e5; 
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%; 
+    opacity: 1;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    align-self: flex-start;
+    margin-right: 20px; 
+}
+
+.logo-container img {
+    max-height: 50px;
+}
+
+.additional-logos {
+    display: flex;
+    align-items: center;
+}
+
+.additional-logos img {
+    max-height: 30px; 
+    margin-right: 40px; 
+    transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+}
+
+/* Add the hover effect */
+.additional-logos img:hover {
+    background-color: #fffefe; 
+    border-radius: 50%; 
+    padding: 10px; 
+}
+
+
+.main {
+    flex-grow: 1;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    margin-left: 60%;
+    margin-bottom: 4px;
+}
+
+/* Style the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.search-bar .search-close {
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    right: 30px; 
+}
+
+
+.search-close:hover {
+    color: #a2c273;
+}
+
+.footer {
+    background-color: #a2c273;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Add some space between the icons */
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Set the icon color */
+}
+
+.social-icons img{
+    max-height: 20px;
+}
+
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #a2c273; /* Choose the background color you prefer */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 15px 20px;
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Style list items */
+.nav-list li {
+    display: inline;
+    margin: 0 10px; /* Adjust the margin to create space between items */
+}
+
+/* Style links */
+.nav-list a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+}
+
+/* Change link color on hover */
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.card-container{
+    padding-bottom: 35px;
+}
+
+.wishlist-card {
+    width: 180px;
+    height: 260px;
+    display: inline-block; /* Display items in a row */
+    border: 2px solid #ddd;
+    margin: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px; /* Add rounded corners for a card-like shape */
+    text-align: center; /* Center-align card content */
+}
+
+.wishlist-card img {
+    width: 180px; /* Ensure the image doesn't overflow the card */
+    height: 180px;
+    border-radius: 20px; /* Add rounded corners for the image */
+}
+
+.wishlist-name {
+    display: flex;
+    font-size: 8px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: Lexend, sans-serif;
+}
+
+.wishlist-price {
+    display: flex;
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: -15px;
+    margin-left: 10px;
+    justify-content: left;
+    font-family: Lexend, sans-serif;
+}
+
+.wishlist-details {
+    margin-top: 10px;
+}
+
+.star::before {
+    content: '\2605'; /* Star symbol (★) */
+}
+
+.heart-icon{
+    display: flex;
+    margin-top: -57px;
+    margin-left: 150px;
+}
+
+.heart-icon img{
+    display: flex;
+    width: 30px;
+    height: 25px;
+}
+
+.rating {
+    color: #FFD700; /* Set the star color */
+    margin-left: -83px; /* Adjust the margin to move the stars to the left */
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container takes up the full height of the card */
+}
+
+@media screen and (max-width: 800px) {
+    .home-page h1 {
+        font-size: 24px;
+    }
+
+    .home-page p {
+        font-size: 16px;
+    }
+
+    .home-page a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
