@@ -51,8 +51,15 @@ outsideCheckbox.addEventListener("change", function () {
     updateCheckboxes();
 });
 
-document.getElementById('contact-us').addEventListener('click', function() {
-    // Redirect to about.html using JavaScript
-    window.location.href = '/HTML/about.html';
-});
+// document.getElementById('contact-us').addEventListener('click', function() {
+//     // Redirect to about.html using JavaScript
+//     window.location.href = '/HTML/about.html';
+// });
 
+const confirmButton = document.getElementById('contact-us');
+contact-us.addEventListener('click', contactUsRedirect);
+
+function contactUsRedirect() {
+    // Redirect to logoutcontroller.php
+    window.location.href = '/HTML/about.html';
+}
