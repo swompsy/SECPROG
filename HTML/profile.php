@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 
     <!-- LINK CSS-->
-    <link rel="stylesheet" href="../CSS/profile.css">
+    <link rel="stylesheet" href="/CSS/profile.css">
     
 </head>
 <body>
@@ -24,8 +24,8 @@
     <header>
         <div class="header-inner">
             <div class="logo">
-                <a href="../home page/home.html">
-                    <img src="../assets/logo_veji.png" class="veji">
+                <a href="/HTML/home.php">
+                    <img src="/assets/veji-logo.png" class="veji">
                 </a>
             </div>
 
@@ -36,39 +36,13 @@
                 </div>
             </div>
 
-            <!-- <div class="search-logo">
-                <img src="assets/search.png" alt="search-logo" class="logo">
-            </div> -->
-
             <div class="additional-logos">
-                <img src="../assets/search.png" alt="search-logo" class="logo" id="searchLogo">
-                <img src="../assets/wishlist.png" alt="wishlist-logo" class="logo">
-                <img src="../assets/history.png" alt="history-logo" class="logo">
-                <img src="../assets/keranjang.png" alt="keranjang-logo" class="logo">
-                <img src="../assets/logo_SecProg.png" alt="logo-only" class="logo">
+                <a href="/HTML/searchbar.html"><img src="/assets/search.png" alt="search-logo" class="logo" id="searchLogo"></a>
+                <a href="/HTML/wishlist.html"><img src="/assets/wishlist.png" alt="wishlist-logo" class="logo"></a>
+                <a href=""><img src="/assets/history.png" alt="history-logo" class="logo"></a>
+                <a href="/HTML/cart.html"><img src="/assets/keranjang.png" alt="keranjang-logo" class="logo"></a>
+                <a href="#"><img src="/assets/v-logo.png" alt="logo-only" class="logo"></a>
             </div>
-
-            <!-- <div class="wishlist">
-                <a href="../">
-                    <img src="assets/wishlist.png" alt="wishlist" class="wishlist">
-                </a>
-            </div>
-            <div class="history">
-                <a href="../">
-                    <img src="assets/history.png" alt="history" class="history">
-                </a>
-            </div>
-            <div class="keranjang">
-                <a href="../">
-                    <img src="assets/keranjang.png" alt="keranjang" class="keranjang">
-                </a>
-            </div>
-            <div class="logo-only">
-                <a href="../home page/home.html">
-                    <img src="assets/logo.png" alt="logo-only" class="logo-only">
-                </a>
-
-            </div> -->
 
         </div>
     </header>
@@ -76,7 +50,7 @@
 
     <div class="profile-container">
         <div class="profile-picture">
-            <img src="../assets/profilepicture.png" alt="profilepicture" class="pict">
+            <img src="/assets/profilepicture.png" alt="profilepicture" class="pict">
         </div>
         <div class="profile-content">
             <p>Veji</p>
@@ -90,13 +64,13 @@
         
         <div class="pop_up" id="popup">
             <div class="pop_up-content">
-                <button class="pop_up-close" id="closePopup"></button>
+                <button class="pop_up-close" id="closePopup">&times;</button>
                 <div class="pop_up-info">
                     <p>Are You Sure?</p>
                 </div>
                 <div class="pop_up-button">
-                    <button class="pop_up-yes" id="cancelButton">No</button>
-                    <button class="pop_up-no" id="confirmButton">Yes, Log Out</button>
+                    <button class="pop_up-no" id="cancelButton">No</button>
+                    <button class="pop_up-yes" id="confirmButton">Yes, Log Out</button>
                 </div>
             </div>
         </div>
@@ -105,7 +79,7 @@
 
             <div class="address-container">
                 <div class="address-logo">
-                    <img src="../assets/icon _pin destination_.svg" alt="address-logo" class="address-logo">
+                    <img src="/assets/icon _pin destination_.svg _pin destination_.svg" alt="address-logo" class="address-logo">
                 </div>
                 <div class="address-title">
                     <p>Address</p>
@@ -120,13 +94,13 @@
                 </div>
 
                 <div class="arrow-vector">
-                    <img src="../assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
+                    <img src="/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
             </div>
 
             <div class="history-container">
                 <div class="history-logo">
-                    <img src="../assets/icon _files history_.svg" alt="history-logo" class="history-logo">
+                    <img src="/assets/icon _files history_.svg _files history_.svg" alt="history-logo" class="history-logo">
                 </div>
 
                 <div class="history-title">
@@ -138,7 +112,7 @@
                 </div>
 
                 <div class="arrow-vector">
-                    <img src="../assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
+                    <img src="/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
 
             </div>
@@ -146,7 +120,7 @@
             <div class="help-container">
 
                 <div class="help-logo">
-                    <img src="../assets/icon _help circle_.svg" alt="help-logo" class="help-logo">
+                    <img src="/assets/icon _help circle_.svg _help circle_.svg" alt="help-logo" class="help-logo">
                 </div>
 
                 <div class="help-title">
@@ -158,7 +132,7 @@
                 </div>
 
                 <div class="arrow-vector">
-                    <img src="../assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
+                    <img src="/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
 
             </div>
@@ -171,7 +145,7 @@
     </div>
 
 
-<script src="../JS/profile.js"></script>
-<script src="../JS/popout.js"></script>
+<script src="/JS/profile.js"></script>
+<script src="/JS/popout.js"></script>
 </body>
 </html>
