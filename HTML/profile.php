@@ -65,7 +65,7 @@
         
         <div class="pop_up" id="popup">
             <div class="pop_up-content">
-                <button class="pop_up-close" id="closePopup">&times;</button>
+                <button class="pop_up-close" id="closePopup"></button>
                 <div class="pop_up-info">
                     <p>Are You Sure?</p>
                 </div>
