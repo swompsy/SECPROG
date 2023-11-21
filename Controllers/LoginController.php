@@ -24,7 +24,6 @@ if ($result->num_rows === 1) {
     $_SESSION['fullname'] = $row['FullName'];
     $_SESSION['email'] = $row['Email'];
     $_SESSION['username'] = $row['UserName'];
-    $_SESSION['password'] = $row['Password'];
     $_SESSION['numberphone'] = $row['NumberPhone'];
     $_SESSION['address'] = $row['Address'];
     $_SESSION['login'] = true;

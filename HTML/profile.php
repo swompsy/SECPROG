@@ -3,6 +3,7 @@
     if($_SESSION['login'] !== true){
         header("Location: login.php");
     }
+    require "../Controllers/Connection.php";
 ?>
 
 <!DOCTYPE html>
