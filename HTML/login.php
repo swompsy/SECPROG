@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="/front-end/Login Page & Register Page/CSS/Login.css">
+    <link rel="stylesheet" href="../CSS/Login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -27,17 +27,16 @@
             <img src="../source/veji-logo.png" alt="home-background">
         </div>
 
-
-        <form id="login-form" onsubmit="return validateForm()" action="/back-end/Controllers/LoginController.php" method="post">
+        <form id="login-form" onsubmit="return validateForm()" action="../Controllers/LoginController.php" method="post">
 
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="email" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="password" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
             </div>           
 
             <div class="form-group">
@@ -56,6 +55,6 @@
     &copy; 2023 Veji Company    
 </footer>
 
-<script src="script.js"></script>
+<script src="../JS/script.js"></script>
 </body>
 </html>

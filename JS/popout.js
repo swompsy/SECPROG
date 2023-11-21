@@ -21,15 +21,8 @@ function hideLogoutPopup() {
 }
 
 function confirmLogout() {
-    // Add your logout logic here
-    // $("pop_up-yes").on("click", onLogout);
-    // window.location.href = '../login.html'; 
-    // console.log('Logging out...');
-    document.getElementById('logoutButton').addEventListener('click', function() {
-        window.location.href = '../login page & register page/html/login.html';
-    });
-    // You can perform additional actions here
-    // hideLogoutPopup();
+    // Redirect to logoutcontroller.php
+    window.location.href = '../Controllers/LogoutController.php';
 }
 
 function cancelLogout() {

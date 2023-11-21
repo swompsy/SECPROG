@@ -2,7 +2,7 @@
     require "../Config/database.php";
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
-    $_SESSION['isfailed']="no";
+
     $config;
     $db = new mysqli(
         $config["server"],
@@ -12,13 +12,10 @@
     );
 
     if ($db->connect_error) {
-        $_SESSION['isfailed']='failed';
         die("Connection failed: " . $db->connect_error);
-
     }
 
 // Set character set to utf8 (or your preferred character set)
-// $db->set_charset("utf8");
+$db->set_charset("utf8");
     
 ?>
-
