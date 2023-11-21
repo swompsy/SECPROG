@@ -26,7 +26,7 @@
         <div class="header-inner">
             <div class="logo">
                 <a href="./home.php">
-                    <img src="../assets/logo_veji.png" class="veji">
+                    <img src="/assets/veji-logo.png" class="veji">
                 </a>
             </div>
 
@@ -75,12 +75,24 @@
                 </div>
             </div>
         </div>
+    
+<form id="addModalForm" action="../Controllers/updateaddress.php" method="post">
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAddModal">&times;</span>
+            <h2>Rename Address</h2>
+            <h4>Enter New Address</h4>
+            <input type="text" id="change-address" name="change-address" class="change-address">
+            <button class="Submit-btn" id="addCategoryButton">Submit</button>
+        </div>
+    </div>
+</form>
 
         <div class="settings-container">
 
             <div class="address-container">
                 <div class="address-logo">
-                    <img src="/assets/icon _pin destination_.svg _pin destination_.svg" alt="address-logo" class="address-logo">
+                    <img src="/assets/icon _pin destination_.svg" alt="address-logo" class="address-logo">
                 </div>
                 <div class="address-title">
                     <p>Address</p>
@@ -94,14 +106,14 @@
                     <p><?php echo $_SESSION['address']?></p>
                 </div>
 
-                <div class="arrow-vector">
-                    <img src="/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
+                <div class="arrow-vector-1">
+                    <img src="/assets/Vector.svg" alt="arrow-vector" class="arrow-vector" id="rename-address">
                 </div>
             </div>
 
             <div class="history-container">
                 <div class="history-logo">
-                    <img src="/assets/icon _files history_.svg _files history_.svg" alt="history-logo" class="history-logo">
+                    <img src="/assets/icon _files history_.svg" alt="history-logo" class="history-logo">
                 </div>
 
                 <div class="history-title">
@@ -112,7 +124,7 @@
                     <p>Lihat seluruh riwayat dan status pesanan</p>
                 </div>
 
-                <div class="arrow-vector">
+                <div class="arrow-vector-2">
                     <img src="/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
 
@@ -121,7 +133,7 @@
             <div class="help-container">
 
                 <div class="help-logo">
-                    <img src="/assets/icon _help circle_.svg _help circle_.svg" alt="help-logo" class="help-logo">
+                    <img src="/assets/icon _help circle_.svg" alt="help-logo" class="help-logo">
                 </div>
 
                 <div class="help-title">
@@ -132,7 +144,7 @@
                     <p>Temukan informasi yang dibutuhkan</p>
                 </div>
 
-                <div class="arrow-vector">
+                <div class="arrow-vector-3">
                     <img src="/assets/Vector.svg" alt="arrow-vector" class="arrow-vector">
                 </div>
 
