@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="stylesheet" href="/CSS/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -24,10 +24,10 @@
 <div class="centre-container">
     <div class="register-container">
         <div class="logo-veji">
-            <img src="../source/veji-logo.png" alt="home-background">
+            <img src="/assets/veji-logo.png" alt="home-background">
         </div>
 
-        <form id="login-form" onsubmit="return validateForm()" action="../Controllers/LoginController.php" method="post">
+        <form id="login-form" onsubmit="return validateForm()" action="/Controllers/LoginController.php" method="post">
 
             <div class="form-group">
                 <label for="email">Email</label>
@@ -44,7 +44,7 @@
             </div>
              
             <div class="form-group" id="signup-link">
-                <p>Don't have an account ? <a href="register.php">Sign up</a></p>
+                <p>Don't have an account ? <a href="/HTML/register.php">Sign up</a></p>
             </div>
 
         </form>
@@ -55,6 +55,6 @@
     &copy; 2023 Veji Company    
 </footer>
 
-<script src="../JS/script.js"></script>
+<script src="/JS/script.js"></script>
 </body>
 </html>

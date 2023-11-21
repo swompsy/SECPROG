@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
-    <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="stylesheet" href="/CSS/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 <div class="centre-container">
     <div class="register-container">
         <div class="logo-veji">
-            <img src="../source/veji-logo.png" alt="home-background">
+            <img src="/assets/veji-logo.png" alt="home-background">
         </div>
         
         <form id="registration-form" onsubmit="return validateForm()" action="/Controllers/RegisterController.php" method="post">
@@ -64,7 +64,7 @@
             </div>
 
             <div class="form-group" id="signup-link">
-                <p>Already have an account ? <a href="Login.php">Sign In</a></p>
+                <p>Already have an account ? <a href="/HTML/login.php">Sign In</a></p>
             </div>
 
         </form>
@@ -196,6 +196,6 @@
     &copy; 2023 Veji Company    
 </footer>
 
-<script src="../JS/script.js"></script>
+<script src="/JS/script.js"></script>
 </body>
 </html>
