@@ -1,22 +1,22 @@
 <?php
     session_start();
-    require "Connection.php";
+    require "./Connection.php";
 
     $is_login = false;
 
     //get data from login form
 if($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = $_POST['Email'];
-    $password = $_POST['Password'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
 //check if email exists in database
-$query = "SELECT * FROM user WHERE Email = ? AND Password = ?";
+$query = "SELECT * FROM user WHERE Email=?;";
 $stmt = $db->prepare($query);
-$stmt->bind_param("ss", $Email, $Password);
-
+var_dump($email);
+$stmt->bind_param("s", $email);
 $stmt->execute();
 $result = $stmt->get_result();
-$stmt->close();
+
 $db->close();
 
 
@@ -28,7 +28,7 @@ if ($result->num_rows === 1) {
     $_SESSION['email'] = $row['email'];
     $_SESSION['username'] = $row['username'];
     $_SESSION['password'] = $row['password'];
-    header("Location: /front-end/home page/home.php");
+    header("Location: /front-end/home page/home.html");
 } else {
     header("Location: /front-end/Login Page & Register Page/HTML/Login.php");
 }

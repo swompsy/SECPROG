@@ -28,16 +28,16 @@
         </div>
 
 
-        <form id="login-form" onsubmit="return validateForm()" action="/Controllers/LoginController.php" method="post">
+        <form id="login-form" onsubmit="return validateForm()" action="/back-end/Controllers/LoginController.php" method="post">
 
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="email" id="email" name="email" placeholder="email" required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="password" name="password" placeholder="password" required>
             </div>           
 
             <div class="form-group">
