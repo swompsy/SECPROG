@@ -1,11 +1,29 @@
 <?php
 session_start();
 require "./Connection.php";
- 
+
+// Sanitize and validate input
+function sanitizeInput($input)
+{
+
+    // Check for the presence of script tags and exit if found
+    if (preg_match("/<script[\s\S]*?>[\s\S]*?<\/script>/i", $input)) {
+        $_SESSION['message'] = "Invalid input. Script tags are not allowed.";
+        header("Location: ../HTML/profile.php");
+        exit();
+    }
+    // Allow only alphanumeric characters, space, and dot
+    $input = preg_replace("/[^a-zA-Z0-9 .]/", "", $input);
+    $input = trim($input);
+    $input = htmlspecialchars($input, ENT_QUOTES);
+    $input = stripslashes($input);
+    return $input;
+}
+
 // get data from form
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserID = $_SESSION['userid'];
-    $newaddress = $_POST['change-address'];
+    $newaddress = sanitizeInput($_POST['change-address']);
 
     // check if the address is null
     if (empty($newaddress)) {
@@ -28,4 +46,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     header("Location: ../HTML/profile.php");
     exit();
 }
-?>

@@ -17,12 +17,6 @@ window.onclick = function (event) {
     }
 }
 
-function validateForm() {
-    // Add your form validation logic here
-    // Return true to submit the form or false to prevent submission
-    return true;
-}
-
 // Get references to the checkboxes and the modal content
 const outsideCheckbox = document.getElementById("terms");
 const insideCheckbox = document.getElementById("scroll-terms");

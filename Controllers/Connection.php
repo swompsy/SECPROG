@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__ . '/../Config/database.php');
+    require "../Config/database.php";
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
 
@@ -14,8 +14,5 @@
     if ($db->connect_error) {
         die("Connection failed: " . $db->connect_error);
     }
-
-// Set character set to utf8 (or your preferred character set)
-
-    
+ 
 ?>
